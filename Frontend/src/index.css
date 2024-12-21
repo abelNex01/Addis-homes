@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    animation: fadeIn 1.5s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+/* Montserrat */
+  @font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../src/assets/fonts/Montserrat-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Montserrat-Light";
+    src: url("../src/assets/fonts/Montserrat-Light.ttf");
+  }
+  @font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../src/assets/fonts/Montserrat-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Montserrat-Medium";
+    src: url("../src/assets/fonts/Montserrat-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../src/assets/fonts/Montserrat-SemiBold.ttf");
+  }
+
+  /* Nokia */
+  @font-face {
+    font-family: "Nokia-Bold";
+    src: url("../src/assets/fonts/Nokia-Bold.ttf");
+  }
+  @font-face {
+    font-family: "Nokia-Light";
+    src: url("../src/assets/fonts/Nokia-Light.ttf");
+  }
+
+
+  body {
+    @apply bg-white text-black;
+  }
+  
+  .dark body {
+    @apply bg-gray-900 text-white;
+  }
